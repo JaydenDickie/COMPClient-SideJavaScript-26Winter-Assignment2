@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Energy Bowl Builder</title>
+        <link href="./EnergyBowlBuilder.css" rel="stylesheet" />
+        <script src="./EnergyBowlBuilder.js" defer></script>
+    </head>
+    <body>
+        <header class="hero">
+            <h1>Custom Energy Bowl Experience</h1> 
+            <p>Chose between our many options to build your perfect energy bowl!</p>
+        </header>
+
+        <main class ="main grid">
+            <div class="option header">
+                <h2>Choose your options!</h2>
+            </div>
+            
+            <fieldset>
+                <legend>Choose a base</legend>
+                <div class="optionSelectGrid">
+                    <label class="choiceSelect">
+                        <input type="radio" name="base" value="WildRice" id="WildRice">
+                        <span>Wild Rice</span>
+                    </label>
+                    <label class="choiceSelect">
+                        <input type="radio" name="base" value="SweetPotato" id="SweetPotato">
+                        <span>Sweet Potato</span>
+                    </label>
+                    <label class="choiceSelect">
+                        <input type="radio" name="base" value="BrownRice" id="BrownRice">
+                        <span>Brown Rice</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose a fruit</legend>
+                <div class="optionSelectFruit">
+                    <label class="choiceSelect">
+                        <input type="radio" name="fruit" value="Strawberries" id="Strawberries">
+                        <span>Strawberries</span>
+                    </label>
+                    <label class="choiceSelect">
+                        <input type="radio" name="fruit" value="Blueberries" id="Blueberries">
+                        <span>Blueberries</span>
+                    </label>
+                    <label class="choiceSelect">
+                        <input type="radio" name="fruit" value="Pineapple" id="Pineapple">
+                        <span>Pineapple</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose a topping</legend>
+                <div class="optionSelectTopping">
+                    <label class="choiceSelect">
+                        <input type="radio" name="topping" value="Avacado" id="Avacado">
+                        <span>Avacado</span>
+                    </label>
+                    <label class="choiceSelect">
+                        <input type="radio" name="topping" value="ToastedWalnuts" id="ToastedWalnuts">
+                        <span>Toasted Walnuts</span>
+                    </label>
+                    <label class="choiceSelect">
+                        <input type="radio" name="topping" value="FetaCheese" id="FetaCheese">
+                        <span>Feta Cheese</span>
+                    </label>
+                </div>
+            </fieldset>
+            <div>
+                <label>Protein</label>
+                <select id="protein">
+                    <option value="Chicken">Chicken</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Eggs">Eggs</option>
+                </select>
+            </div>
+            <div>
+                <label>Sweeteners</label>
+                <select id="sweetener">
+                    <option value="Honey">Honey</option>
+                    <option value="Maple Syrup">Maple Syrup</option>
+                    <option value="Date Syrup">Date Syrup</option>
+                </select>
+            </div>
+            <div>
+                <label>Size</label>
+                <select id="size">
+                    <option value="Small">Small</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Large">Large</option>
+                </select>
+            </div>
+            <br>
+            <button id="finishOrderButton" >Finish Order</button>
+            <div>
+                <p id="orderDescription">Placeholder</p>
+            </div>    
+        </main>
+    </body>
+</html>
