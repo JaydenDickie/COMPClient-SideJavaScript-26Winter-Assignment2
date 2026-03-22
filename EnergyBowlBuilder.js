@@ -93,8 +93,8 @@ function finishOrder(){
 
     let topping = null;
     if (document.getElementById('Avacado').checked) topping = 'Avacado';
-    if (document.getElementById('ToastedWalnuts').checked) topping = 'ToastedWalnuts';
-    if (document.getElementById('FetaCheese').checked) topping = 'FetaCheese';
+    if (document.getElementById('ToastedWalnuts').checked) topping = 'Toasted Walnuts';
+    if (document.getElementById('FetaCheese').checked) topping = 'Feta Cheese';
 
     const protein = proteinSelect.value;
     const sweetener = sweetenerSelect.value;
